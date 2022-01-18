@@ -3,9 +3,17 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+ 
   },
   plugins: [
+     {
+    resolve: `gatsby-source-strapi`,
+    options: {
+      apiURL: `http://localhost:1337/api`,
+      queryLimit: 10000, // Defaults to 100
+      collectionTypes: [`produkt`, `user`],
+    },
+  },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -31,16 +39,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-    resolve: `gatsby-source-strapi`,
-    options: {
-      apiURL: `http://localhost:1337`,
-      queryLimit: 10000, // Default to 100
-      contentTypes: [`Produkt`],
-     
-      // Possibility to login with a strapi user, when content types are not publically available (optional).
-          },
-  },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

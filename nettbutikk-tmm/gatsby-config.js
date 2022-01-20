@@ -9,9 +9,9 @@ module.exports = {
      {
     resolve: `gatsby-source-strapi`,
     options: {
-      apiURL: `http://localhost:1337`,
+      apiURL: `http://localhost:1337/api`,
       queryLimit: 10000, // Defaults to 100
-      collectionTypes: [`produkt`],
+      collectionTypes: [`Produkt`],
     },
   },
     `gatsby-plugin-react-helmet`,
@@ -22,6 +22,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -44,3 +45,4 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+

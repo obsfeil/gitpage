@@ -1,7 +1,7 @@
 {
   "name": "nettbutikk-server",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -10,16 +10,24 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "3.6.8",
-    "@strapi/plugin-users-permissions": "3.6.8",
-    "@strapi/strapi": "3.6.8",
-    "pg": "^8.7.1"
+    "@strapi/plugin-documentation": "^4.0.5",
+    "@strapi/plugin-graphql": "^4.0.5",
+    "@strapi/plugin-i18n": "4.0.5",
+    "@strapi/plugin-users-permissions": "4.0.5",
+    "@strapi/strapi": "4.0.5",
+    "date-fns": "^2.28.0",
+    "formidable": "^3.2.1",
+    "jsx-runtime": "^1.2.0",
+    "pg": "8.6.0",
+    "react-dnd": "^14.0.5",
+    "react-dnd-html5-backend": "^14.1.0",
+    "uuid": "^8.3.2"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "4a0bc547-0659-452f-ac1c-62e7f36c61e1"
+    "uuid": "28ec0536-03d9-411a-8c33-bdda08513424"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",

@@ -36,6 +36,7 @@ const IndexPage = () => (
 export default IndexPage
 
 export const pageQuery = graphql`
+  query MdxBlogPost {
  allStrapiArticle {
     nodes {
       data {
@@ -49,5 +50,5 @@ export const pageQuery = graphql`
       }
     }
   }
-}
-`
+ }
+}`

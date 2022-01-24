@@ -1,4 +1,4 @@
-import * as React from "react"
+ import * as React from "react"
  import { Link } from "gatsby"
  import { StaticImage } from "gatsby-plugin-image"
 
@@ -8,7 +8,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  // eslint-disable-next-line react/jsx-no-comment-textnodes
+  
   <Layout>
   <Seo title="Home" />
   <h1>Hi people</h1>
@@ -28,8 +28,9 @@ const IndexPage = () => (
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
     </p>
-  {/* {console.log("IndexPage.render data", data)} */}
-    </Layout>  
+   {console.log("IndexPage.render data", data)} 
+  
+ </Layout>  
 )
 
 export default IndexPage

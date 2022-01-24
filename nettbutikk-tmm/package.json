@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "connected-react-router": "^6.9.2",
     "gatsby": "^4.5.3",
     "gatsby-plugin-gatsby-cloud": "^4.5.2",
     "gatsby-plugin-image": "^2.5.2",
@@ -13,7 +14,7 @@
     "gatsby-plugin-react-helmet": "^5.5.0",
     "gatsby-plugin-sharp": "^4.5.2",
     "gatsby-source-filesystem": "^4.5.2",
-    "gatsby-source-strapi": "^1.0.2",
+    "gatsby-source-strapi": "github:relate-app/gatsby-source-strapi",
     "gatsby-transformer-sharp": "^4.5.0",
     "prop-types": "^15.8.0",
     "react": "^17.0.1",
@@ -21,7 +22,16 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "babel-jest": "^27.4.6",
+    "babel-preset-gatsby": "^2.5.2",
+    "eslint": "^8.7.0",
+    "eslint-plugin-react": "^7.28.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "react-test-renderer": "^17.0.2"
   },
   "keywords": [
     "gatsby"
@@ -34,7 +44,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

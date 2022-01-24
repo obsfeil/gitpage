@@ -36,7 +36,7 @@ const IndexPage = () => (
 export default IndexPage
 
 export const pageQuery = graphql`
- allStrapiProdukt {
+ allStrapiArticle {
     nodes {
       data {
         attributes {

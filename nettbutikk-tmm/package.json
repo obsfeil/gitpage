@@ -28,6 +28,7 @@
     "babel-preset-gatsby": "^2.5.2",
     "eslint": "^8.7.0",
     "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",
